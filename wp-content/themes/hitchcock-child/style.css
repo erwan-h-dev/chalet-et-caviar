@@ -2,7 +2,7 @@
 
 /*---------------------------------------------------------------------------------
 
-	Theme Name: Hitchcock-child
+	Theme Name: Hitchcock_child
     Text Domain: hitchcock
     Template: Hitchcock
     Version: 0.1.0
@@ -11,3 +11,327 @@
 	Description: child theme of hitchcock https://www.andersnoren.se/teman/hitchcock-wordpress-theme/
 
 ----------------------------------------------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Dr+Sugiyama&display=swap');
+
+.header{
+ padding: 30px 0;
+ display: none;
+}
+.chalets {
+    margin-top: 60px;
+}
+
+.archive-header{
+    padding-top: 30px;
+    /* height: 60px; */
+}
+.archive-description{
+    width: 600px;
+    max-width: 80%;
+    margin: auto;
+    text-align: justify;
+}
+
+.mobile-view{
+    display: none;
+}
+
+.desktop-view{
+    display: block;
+}
+
+.archive-title{
+    font-family: 'Dr Sugiyama', cursive;
+    font-weight: 400;
+    color: #CE9161;
+    text-transform: capitalize;
+    font-size: 4rem;
+}
+
+.content {
+    width: 70%;
+	min-width: 1100px;
+	margin: 0 auto;
+    max-width: 1500px;
+}
+
+.posts{
+    margin-top: 0;
+}
+
+.posts .post + .post { 
+    margin-left: 1%; 
+}
+
+.posts .post:nth-child(3n+1) {
+    margin-left: 1%; 
+}
+
+
+.posts .post:nth-child(4n+1) {
+    margin-left: 0;
+}
+
+.header-search, .search-form{
+    display: none;
+}
+
+.chalet-card{
+    margin-top: 0 !important;
+    margin-bottom: 1% !important;
+    /* margin-right: 3% !important; */
+    padding-bottom: 23% !important;
+    /* width: 23% !important; */
+    filter: grayscale(0);
+    flex: 0 0 23%;
+}
+
+.chalet-card:hover{
+    filter: grayscale(100%);
+}
+
+.post-attributes{
+    position: absolute;
+    margin: auto;
+    margin-top: -50px;
+    padding: 20px 0;
+    left: 0;
+    right: 0;
+    border: solid 2px #fff;
+    background-color: #1d1d1d ;
+    display: flex;
+    justify-content: space-around;
+    max-width: 800px;
+
+}
+
+.post-header{
+
+    width: 100%;
+    position: absolute;
+    margin-top: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 2rem;
+    color: #1d1d1d;
+    background: -webkit-linear-gradient(top, #e5e5e57d 40%, #c5c5c500 100%);
+}
+
+.post-header .post-title{
+    font-family: 'Dr Sugiyama', cursive;
+    font-style: normal;
+    font-weight: 400 !important;
+    text-transform: capitalize !important;
+}
+
+.attribute-view{
+    color: #999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: #999 solid 2px;
+    width: 155px;
+    margin: 10px;
+}
+
+.attribute-view i, .attribute-view p{
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+
+.post-inner{
+    width: 100%;
+    margin-top: 80px;
+}
+
+/* calendar */
+
+.wpsbc-container[data-columns] .wpsbc-calendars .wpsbc-calendar{
+    margin: auto !important;
+    float: none !important;
+}
+
+.navigation{
+    display: flex;
+}
+
+.logo{
+    position: absolute;
+    padding-top: 10px;
+    padding-left: 30px;
+}
+
+.logo h1{
+    font-family: 'Dr Sugiyama', cursive;
+    font-style: normal;
+    font-weight: 400 !important;
+    text-transform: none !important;
+    color:#CE9161;
+    margin: 0;
+}
+
+.mobile-navigation{
+    width: 35%;
+}
+
+@media ( max-width: 1330px ) { 
+
+    .section-inner{
+        width: 90%;
+        min-width: 0;
+    }
+
+    .chalet-card{
+        
+        padding-bottom: 32% !important;
+        flex: 0 0 32%;
+    }
+    
+    .posts .post:nth-child(4n+1) {
+        margin-left: 1%;
+    }
+    
+    .posts .post:nth-child(3n+1) {
+        margin-left: 0; 
+    }
+    .nav-toggle {
+        width: 150px;
+    }
+    
+    
+}
+@media ( max-width: 900px ) {  
+    .logo{
+        padding-top: 5px;
+    }
+
+    .logo h1{
+        font-size: 2em;
+    }
+}
+
+@media ( max-width: 800px ) {  
+
+    .section-inner{
+        width: 100%;
+        min-width: 0;
+    }
+    
+    .chalet-card{
+        
+        padding-bottom: 49% !important;
+        flex: 0 0 49%;
+    }
+    
+    .posts .post:nth-child(4n+1) {
+        margin-left: 0;
+    }
+    
+    .posts .post:nth-child(3n+1) {
+        margin-left: 0; 
+    }
+    
+    .posts .post + .post { 
+        margin-left: 1%; 
+    }
+
+    .posts .post:nth-child(2n+1) {
+        margin-left: 0; 
+    }
+
+    .post-attributes{
+        position: relative;
+        margin: auto;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 20px 0;
+        left: 0;
+        right: 0;
+        border: solid 2px #fff;
+        background-color: #1d1d1d ;
+        display: flex;
+        justify-content: space-around;
+        max-width: none;
+
+    }
+
+    .post-inner{
+    width: 100%;
+    margin-top: 0;
+    padding-top: 20px;
+}
+
+    
+    .mobile-view{
+        display: block;
+    }
+    .desktop-view{
+        display: none;
+    }
+   
+}
+
+@media ( max-width: 600px ) {  
+
+    .header{
+        display:none;
+    }
+    
+    .post-header {
+    max-width: 100%;
+    }
+
+    .section-inner{
+        width: 100%;
+        min-width: 0;
+    }
+
+    .posts .post + .post { 
+        margin-left: 1% !important; 
+    }
+
+    .posts .post:nth-child(2n+1) {
+        margin-left: 0 !important; 
+    }
+
+    .post-attributes{
+        position: relative;
+        margin: auto;
+        margin-top: -20px;
+        margin-bottom: 0;
+        padding: 20px 0;
+        left: 0;
+        right: 0;
+        border: solid 2px #fff;
+        background-color: #1d1d1d ;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        max-width: 100%;
+
+    }
+
+    .post-inner{
+        width: 100%;
+        margin-top: 20px;
+    }    
+}
+
+@media ( max-width: 445px ) {  
+    .section-inner{
+        width: 100%;
+        min-width: 0;
+    }
+
+    .chalet-card{
+        
+        padding-bottom: 100% !important;
+        flex: 0 0 100%;
+    }
+
+    .posts .post + .post { 
+        margin-left: 0 !important; 
+    }
+}
