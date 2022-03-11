@@ -23,7 +23,7 @@
 		
 		<div class="navigation">
 			<div class="logo">
-				<h1>Chalet et Caviar</h1>
+				<h1>Chalets et Caviar</h1>
 			</div>
 			<div class="section-inner">
 				
